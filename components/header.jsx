@@ -235,7 +235,7 @@ export default function Header() {
           <Image
             src={"/logof.jpg"}
             alt="Sensai Logo"
-            width={200}
+            width={170}
             height={200}
           />
         </Link>
