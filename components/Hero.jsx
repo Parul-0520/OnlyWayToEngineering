@@ -33,14 +33,15 @@ const HeroSection = () => {
       <div className="space-y-6 text-center">
         <div className="space-y-6 mx-auto">
           <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl gradient-title animate-gradient">
-            Your AI Career Coach for
+            Your Only Way To
             <br />
-            Professional Success
+            Engineering
           </h1>
-          <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
-            Advance your career with personalized guidance, interview prep, and
-            AI-powered tools for job success.
-          </p>
+          <i><p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl">
+            No clarity about your engineering path? That’s okay.
+Discover, learn, and build your way forward. Advance your engineering journey with expert mentorship and smart learning tools.
+
+          </p></i>
         </div>
         <div className="flex justify-center space-x-4">
           <Link href="/dashboard">
@@ -48,7 +49,7 @@ const HeroSection = () => {
               Get Started
             </Button>
           </Link>
-          <Link href="https://www.youtube.com/roadsidecoder">
+          <Link href="https://youtube.com/playlist?list=PLRAV69dS1uWRH0QDzQaKLQEYD26YCQ5eS&si=CHQzUWB3FX0mI7pn">
             <Button size="lg" variant="outline" className="px-8">
               Watch Demo
             </Button>
@@ -57,7 +58,7 @@ const HeroSection = () => {
         <div className="hero-image-wrapper mt-5 md:mt-0">
           <div ref={imageRef} className="hero-image">
             <Image
-              src="/banner3.jpeg"
+              src="/bannerf.png"
               width={1280}
               height={720}
               alt="Dashboard Preview"

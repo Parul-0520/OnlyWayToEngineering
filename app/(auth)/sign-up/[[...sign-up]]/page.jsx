@@ -1,8 +1,21 @@
-import React from 'react'
-import { SignIn, SignUp } from '@clerk/nextjs';
+// /app/auth/sign-up/page.jsx
+"use client";
 
-const Page = () => {
-  return <SignUp/>;
-};
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { useAuth, SignUp } from "@clerk/nextjs";
 
-export default Page;
+export default function SignUpPage() {
+  const { isSignedIn } = useAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (isSignedIn) {
+      router.replace("/dashboard"); // already signed-in, go to dashboard
+    }
+  }, [isSignedIn, router]);
+
+  if (isSignedIn) return null; // prevent flicker
+
+  return <SignUp redirectUrl="/dashboard" />;
+}

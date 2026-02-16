@@ -90,7 +90,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
             <footer className="bg-muted/50 py-12">
               <div className="container mx-auto px-4 text-center text-gray-200">
-                <p>Made with 💗 by RoadsideCoder</p>
+                <p>By Parul Sharma : once a puzzled first year undergrad, about finding the OnlyWayToEngineering</p>
               </div>
             </footer>
           </ThemeProvider>
